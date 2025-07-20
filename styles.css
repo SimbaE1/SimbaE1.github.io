@@ -1,0 +1,1020 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #667eea;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 1px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.name {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.intro {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: #555;
+    line-height: 1.7;
+}
+
+.passions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.passion-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.passion-card.music {
+    border-left-color: #ff6b6b;
+}
+
+.passion-card.tech {
+    border-left-color: #4ecdc4;
+}
+
+.passion-card.interests {
+    border-left-color: #45b7d1;
+}
+
+.passion-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.passion-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.family {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.family h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.family p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.fun-fact {
+    text-align: center;
+}
+
+.parmesan-note {
+    background: #fff3cd;
+    border: 2px solid #ffeaa7;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: inline-block;
+    max-width: 600px;
+}
+
+.parmesan-note p {
+    color: #856404;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #f0f0f0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+em {
+    font-style: italic;
+    color: #667eea;
+    font-weight: 500;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #85fb6e;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #f31a1a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.about-intro {
+    margin-bottom: 3rem;
+}
+
+.about-card {
+    background: linear-gradient(135deg, #66ea78, #ea4040);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-card h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.skills-section {
+    margin-bottom: 3rem;
+}
+
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.skill-category h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    padding: 0.5rem 0;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+.philosophy {
+    margin-bottom: 3rem;
+}
+
+.philosophy-card {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.philosophy-card h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.quote {
+    margin-top: 2rem;
+}
+
+.quote blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.fun-facts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.fact-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.fact-card h4 {
+    color: #667eea;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project-header h3 {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.project-card.featured .project-header h3 {
+    color: white;
+}
+
+.project-tag {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-tag.os { background: #ff6b6b; color: white; }
+.project-tag.ai { background: #4ecdc4; color: white; }
+.project-tag.game { background: #45b7d1; color: white; }
+.project-tag.web { background: #f39c12; color: white; }
+.project-tag.hardware { background: #e74c3c; color: white; }
+.project-tag.robotics { background: #9b59b6; color: white; }
+.project-tag.energy { background: #27ae60; color: white; }
+.project-tag.math { background: #34495e; color: white; }
+.project-tag.creative { background: #e67e22; color: white; }
+.project-tag.collection { background: #95a5a6; color: white; }
+.project-tag.educational { background: #3498db; color: white; }
+.project-tag.security { background: #c0392b; color: white; }
+.project-tag.experimental { background: #8e44ad; color: white; }
+.project-tag.crypto { background: #2c3e50; color: white; }
+
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.achievement-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.achievement-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.achievement-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-card li {
+    padding: 0.5rem 0;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.achievement-card li:before {
+    content: "▸";
+    color: #667eea;
+    position: absolute;
+    left: 0;
+}
+
+.achievement-card li:last-child {
+    border-bottom: none;
+}
+
+.skills-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.skill-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Books Page Styles */
+.book-intro {
+    margin-bottom: 3rem;
+}
+
+.intro-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.intro-card h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.book-series {
+    margin-bottom: 3rem;
+}
+
+.series-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.series-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.series-card.featured {
+    border-left: 5px solid #667eea;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+}
+
+.series-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.series-header h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.series-tag {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+}
+
+.series-tag.fantasy { background: #9b59b6; }
+.series-tag.adventure { background: #e67e22; }
+.series-tag.dystopian { background: #e74c3c; }
+.series-tag.epic { background: #2c3e50; }
+
+.series-author {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.series-description {
+    margin-bottom: 1.5rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.series-highlights {
+    margin-bottom: 2rem;
+}
+
+.series-highlights h4 {
+    color: #667eea;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.series-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.series-highlights li {
+    padding: 0.5rem 0;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.series-highlights li:before {
+    content: "★";
+    color: #667eea;
+    position: absolute;
+    left: 0;
+}
+
+.series-highlights li:last-child {
+    border-bottom: none;
+}
+
+.book-list {
+    margin-bottom: 1.5rem;
+}
+
+.book-list h4 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.book-item:hover {
+    background: #e9ecef;
+}
+
+.book-item.upcoming {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+}
+
+.book-number {
+    background: #667eea;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.book-title {
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.reading-philosophy {
+    margin-bottom: 3rem;
+}
+
+.philosophy-card {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.philosophy-card h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.reading-stats h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.stat-card h4 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0.5rem 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-detail {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.github-projects, .other-projects {
+    margin-bottom: 3rem;
+}
+
+.github-projects h2, .other-projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+.project-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.project-card.featured .project-links {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.github-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.github-link:hover {
+    background: #555;
+}
+
+.project-card.featured .github-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.project-card.featured .github-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.project-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.feature {
+    padding: 0.2rem 0.6rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.project-card.featured .feature {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.mahler-section {
+    margin-bottom: 3rem;
+}
+
+.mahler-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.mahler-card h2 {
+    margin-bottom: 1rem;
+}
+
+.mahler-quote {
+    margin-top: 2rem;
+}
+
+.mahler-quote blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.mahler-quote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.instruments h2,
+.compositions h2,
+.musical-analysis h2,
+.music-tech h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+.instruments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.instrument-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.instrument-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.composition-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+}
+
+.composition-card h3 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.composition-details {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.instrumentation h4,
+.composition-philosophy h4 {
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.instrumentation ul {
+    list-style: none;
+}
+
+.instrumentation li {
+    padding: 0.3rem 0;
+    color: #666;
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.analysis-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.analysis-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.tech-music-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tech-music-card h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.tech-music-card h3:not(:first-child) {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .name, .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tagline, .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .intro {
+        font-size: 1rem;
+    }
+    
+    .passions, .skills-grid, .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .project-card.featured {
+        grid-column: span 1;
+    }
+    
+    .composition-details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .passion-card, .skill-category, .project-card {
+        padding: 1.2rem;
+    }
+    
+    .series-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    
+    .name, .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .nav-menu {
+        gap: 0.5rem;
+    }
+    
+    .nav-link {
+        font-size: 0.8rem;
+    }
+    
+    .passion-card h3, .skill-category h3, .project-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .series-card {
+        padding: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
