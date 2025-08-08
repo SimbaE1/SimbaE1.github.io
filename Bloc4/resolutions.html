@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminal Justice Resolutions - Room 4 MUN Bloc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="room-badge-nav">4</span>
+                <span class="brand-text">Room 4 Bloc</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="pretrial.html" class="nav-link">Pre-trial Alternatives</a></li>
+                <li><a href="funding.html" class="nav-link">Funding</a></li>
+                <li><a href="rehabilitation.html" class="nav-link">Prison Rehabilitation</a></li>
+                <li><a href="members.html" class="nav-link">Members</a></li>
+                <li><a href="resolutions.html" class="nav-link active">Resolutions</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-hero">
+            <div class="hero-content">
+                <div class="room-highlight">
+                    <span class="room-number">4</span>
+                    <div class="room-text">
+                        <span class="room-label">ROOM</span>
+                        <span class="room-subtitle">Justice Resolutions</span>
+                    </div>
+                </div>
+                <h1 class="title">Criminal Justice Resolutions</h1>
+                <p class="subtitle">Our Legislative Impact on Justice Reform</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="resolutions-section">
+                <h2>Our Justice Reform Initiatives</h2>
+                
+                <div class="resolution-grid">
+                    <!-- Resolutions will be loaded dynamically from resolutions.txt -->
+                </div>
+
+                <div class="statistics-section">
+                    <h2>Room 4 Justice Reform Impact</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-big">3</span>
+                            <span class="stat-label">Justice Resolutions</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-big">1</span>
+                            <span class="stat-label">Adopted</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-big">1</span>
+                            <span class="stat-label">In Progress</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-big">100%</span>
+                            <span class="stat-label">Coalition Consensus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="focus-areas-summary">
+                    <h2>Our Three Pillars in Action</h2>
+                    <div class="pillars-summary-grid">
+                        <div class="pillar-summary pretrial">
+                            <h3>🏛️ Pre-trial Alternatives</h3>
+                            <p>RES/4/2024/01 establishes international standards for community-based pre-trial supervision, reducing detention rates by up to 60%.</p>
+                            <a href="pretrial.html" class="pillar-link">Learn More →</a>
+                        </div>
+                        <div class="pillar-summary funding">
+                            <h3>💰 System Funding</h3>
+                            <p>Draft resolution creates sustainable financing frameworks, including justice investment bonds and reinvestment strategies.</p>
+                            <a href="funding.html" class="pillar-link">Learn More →</a>
+                        </div>
+                        <div class="pillar-summary rehabilitation">
+                            <h3>🔄 Rehabilitation</h3>
+                            <p>Working paper develops comprehensive rehabilitation standards with proven 25% recidivism reduction outcomes.</p>
+                            <a href="rehabilitation.html" class="pillar-link">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how-to-add">
+                    <h2>Contributing to Our Legislative Work</h2>
+                    <div class="instruction-card">
+                        <h3>For Coalition Members:</h3>
+                        <p>To contribute to Room 4's criminal justice reform initiatives:</p>
+                        <ol>
+                            <li>Review our existing resolutions and working papers</li>
+                            <li>Submit proposals through your national delegation</li>
+                            <li>Participate in working group discussions on specialized topics</li>
+                            <li>Share national best practices and implementation experiences</li>
+                        </ol>
+                        <p><strong>Current Priority:</strong> We're seeking input on implementation guidelines for our adopted pre-trial alternatives framework.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-room">
+                    <span class="footer-room-number">4</span>
+                    <div class="footer-room-text">
+                        <p><strong>Room 4 Justice Reform</strong></p>
+                        <p>Building better justice systems</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="stuff/template.html">Template</a>
+                    <a href="members.html">Members</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load resolution data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadMemberData();
+        });
+    </script>
+</body>
+</html>

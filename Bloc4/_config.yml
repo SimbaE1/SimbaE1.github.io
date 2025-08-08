@@ -1,0 +1,64 @@
+# GitHub Pages Configuration for Room 4 MUN Bloc
+
+# Site settings
+title: "Room 4 MUN Bloc"
+description: "Five Nations, One Voice - Unified in Room 4 | Model United Nations Coalition"
+baseurl: ""
+url: "https://yourusername.github.io/MUN"
+
+# GitHub Pages settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Room 4 specific settings
+room_number: 4
+bloc_name: "Room 4 Coalition"
+member_count: 5
+
+# SEO and metadata
+author: "Room 4 MUN Bloc"
+twitter:
+  username: room4mun
+  card: summary_large_image
+
+social:
+  name: Room 4 MUN Bloc
+  links:
+    - https://github.com/yourusername/MUN
+
+# Collections for resolutions
+collections:
+  resolutions:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Room 4 Secretariat"
+  - scope:
+      path: ""
+      type: "resolutions"
+    values:
+      layout: "resolution"
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Include files
+include:
+  - members.txt

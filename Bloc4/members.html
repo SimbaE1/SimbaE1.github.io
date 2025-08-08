@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coalition Members - Room 4 MUN Bloc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="room-badge-nav">4</span>
+                <span class="brand-text">Room 4 Bloc</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="pretrial.html" class="nav-link">Pre-trial Alternatives</a></li>
+                <li><a href="funding.html" class="nav-link">Funding</a></li>
+                <li><a href="rehabilitation.html" class="nav-link">Prison Rehabilitation</a></li>
+                <li><a href="members.html" class="nav-link active">Members</a></li>
+                <li><a href="resolutions.html" class="nav-link">Resolutions</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-hero">
+            <div class="hero-content">
+                <div class="room-highlight">
+                    <span class="room-number">4</span>
+                    <div class="room-text">
+                        <span class="room-label">ROOM</span>
+                        <span class="room-subtitle">Coalition Members</span>
+                    </div>
+                </div>
+                <h1 class="title">Our Coalition</h1>
+                <p class="subtitle">Five Nations United for Criminal Justice Reform</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="coalition-overview">
+                <h2>Who's in Our Bloc?</h2>
+                <p class="overview-text">
+                    Here are the countries currently in our Room 4 bloc. We're looking for more members! 
+                    If you want to work on criminal justice issues with us, come find us in Room 4.
+                </p>
+            </section>
+
+            <section class="members-grid" id="membersGrid">
+                <!-- Members will be loaded dynamically from members.txt -->
+            </section>
+
+            <section class="join-us-section">
+                <h2>Why Join Our Bloc?</h2>
+                <div class="join-reasons-grid">
+                    <div class="reason-card">
+                        <h3>🤝 Stronger Together</h3>
+                        <p><em>"Alone we can do so little; together we can do so much."</em> - Helen Keller</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>📝 Fresh Perspectives</h3>
+                        <p><em>"The best way to find out if you can trust somebody is to trust them."</em> - Ernest Hemingway</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>🏛️ Room 4 Power</h3>
+                        <p><em>"In diversity there is beauty and there is strength."</em> - Maya Angelou</p>
+                    </div>
+                    <div class="reason-card">
+                        <h3>⚡ No Pressure</h3>
+                        <p><em>"The way to get started is to quit talking and begin doing."</em> - Walt Disney</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="membership-info">
+                <div class="membership-card">
+                    <h2>How to Join Room 4 Bloc</h2>
+                    <div class="join-steps">
+                        <div class="step">
+                            <h4>1. Find Us 🕵️</h4>
+                            <p>Come talk to us in Room 4 during committee sessions or breaks.</p>
+                        </div>
+                        <div class="step">
+                            <h4>2. Interest Check ✋</h4>
+                            <p>Let us know you're interested in criminal justice issues - any of our three focus areas.</p>
+                        </div>
+                        <div class="step">
+                            <h4>3. Join Up! 🎉</h4>
+                            <p>That's it! We'll add you to our working group and keep you updated on our resolutions.</p>
+                        </div>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="resolutions.html" class="cta-button primary">See What We're Working On</a>
+                        <a href="index.html" class="cta-button secondary">Back to Home</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-room">
+                    <span class="footer-room-number">4</span>
+                    <div class="footer-room-text">
+                        <p><strong>Room 4 Coalition</strong></p>
+                        <p>Five nations, one mission</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="pretrial.html">Pre-trial</a>
+                    <a href="funding.html">Funding</a>
+                    <a href="rehabilitation.html">Rehabilitation</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load member data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadMemberData();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Format: Country,Flag,OfficialName,Role,Expertise1|Expertise2|Expertise3|Expertise4,Contribution,Stat1,Stat2,InitiativeTitle,InitiativeDescription
+Philippines,🇵🇭,Republic of the Philippines,Member,Pre-Trial Detention Alternatives|Rehabilitation|Funding Prisons|Prison Ethics,Proposed a plan for removing pre-trial detention; re-working money flow; and making prison more habitable, Community Safety Outside Of Prison, Willing To Fight For Human Rights, Re-Distributing the Flow of Money In Our Prisons, Many want more money to be put into the prison system.  Although I believe that we can achieve more with the money we already have by having cheaper & more morally ethical options for pre-trial detention. The excess money could be put to making our existing prisons more habitable - all without spending a cent more!
+Kenya,🇰🇪,Republic of Kenya,Member
+Brazil,🇧🇷,Federative Republic of Brazil,Member
+New Zealand,🇳🇿,New Zealand,Member
+Nigeria,🇳🇬,Federal Republic of Nigeria,Member
