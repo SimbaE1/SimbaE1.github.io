@@ -1,0 +1,2 @@
+# Format: ID,Title,Status,Date,Description,Sponsors,Link
+RES-2025-001,HEAL,PASSED,2025-08-08,Addresses HEAL - Hope, Education, Accountability, Liberation,"Philippines,Kenya,Brazil,New Zealand,Nigeria,Colombia,France,India,China",resolutions/resolution_2025_08_08.txt
